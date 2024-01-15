@@ -1,0 +1,381 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family:'poppins', sans-serif ;
+    box-sizing: border-box;
+}
+body{
+    background-color: black;
+}
+#header{
+    height: 100vh;
+    width: 100%;
+    margin-top: 40px;
+}
+.container{
+    padding: 5px 5%;
+}
+nav{
+   display:flex;
+   align-items: center;
+   justify-content: space-between;
+   flex-wrap: wrap; 
+}
+nav ul li{
+    display: inline-block;
+    list-style: none;
+    margin: 20px 20px;
+}
+nav ul li a{
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    position: relative;
+}
+nav ul li a::after{
+    content: '';
+    background-color:brown;
+    height: 5px;
+    position: absolute;
+    width: 0;
+    left: 0;
+    bottom: -7px;
+    transition: 0.3s;
+}
+nav ul li a:hover::after{
+    width: 100%;
+}
+nav ul li i{
+    color: white;
+}
+.heading{
+    margin-top: 10%;
+    font-size: 30px;
+    display: flex;
+}
+.heading h1{
+    font-size: 60px;
+    margin-top: 20px;
+    color: white;
+}
+.heading h1 span{
+    color: brown;
+}
+.image img{
+    border-radius: 100%;
+    border-color: brown 2px solid;
+    margin-left: 700px;
+    position: absolute;
+    height: 500px;
+    width: 700px;
+}
+.image img:hover{
+ background-image: url(logo.png);
+}
+.work img {
+    width: 100%;
+    border-radius: 10px;
+    display: block;
+    transition: transform 0.5s;
+}
+
+.work:hover img {
+    transform: scale(1.1);
+}
+
+#about{
+    padding: 80px 0; 
+    color: white;
+ }
+ .row{
+     display: flex;
+     justify-content: space-between;
+     flex-wrap: wrap;
+ }
+ .abtme1{
+     flex-basis: 35%;
+ }
+ .abtme1 img{
+     width:100%;
+     border-radius: 15px;
+ }
+ .abtme2{
+    color: white;
+     flex-basis: 60%;
+ }
+ .sub-title{
+  font-size: 60px;
+  font-weight: 600;
+  color:white;
+ }
+ .t_title{
+     display: flex;
+     margin: 20px 0 40px;
+ }
+ .t_links{
+     margin-right: 50px;
+     font-size: 18px;
+     font-weight: 500;
+     cursor: pointer;
+     position: relative;
+ 
+ }
+ .t_links::after{
+     content: '';
+     width: 0;
+     height: 3px;
+     background-color:brown;
+     position: absolute;
+     left: 0;
+     bottom: -8px;
+     transition: 0.5s;
+ }
+ .t_links.active-link::after{
+     width: 100%;
+ }
+ .t_contents ul li{
+     list-style: none;
+     margin: 10px 0;
+ 
+ }
+ .t_contents ul li span{
+     color: brown;
+     font-size: 14px;
+ }
+ .t_contents{
+     display: none;
+ }
+ .t_contents.active-tab{
+     display: block;  
+ }
+ 
+ #work2{
+    padding: 30px 0;
+}
+.work2-list{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+    grid-gap: 40px;
+    margin-top: 50px;
+}
+.work2-list div{
+    background: white;
+    padding: 40px;
+    font-size: 13px;
+    font-weight: 300;
+    border-radius: 10px;
+    transition: background 0.5s, transform 0.5s;
+}
+.work2-list i{
+    font-size: 50px;
+    margin-bottom: 30px;
+}
+.work2-list h2{
+    font-size: 30px;
+    font-weight: 500;
+    margin-bottom: 15px;
+}
+.work2-list div a{
+    text-decoration: none;
+    counter-reset: rgb(186, 182, 182);
+    font-size: 12px;
+    margin-top: 20px;
+    display: inline-block;
+}
+.work2-list div:hover{
+    background: rgb(198, 85, 85);
+    transform: translate(-10px);
+}
+
+#work1{
+    padding: 50px 0;
+}
+.work-list{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+    grid-gap: 40px;
+    margin-top: 50px; 
+    
+}
+.work{
+    border-radius: 10px;
+    position: relative;
+    overflow:hidden;
+}
+.work img{
+    height:100% ;
+    width: 100%;
+    border-radius: 10px;
+    display: block;
+    transition: transform 0.5s;
+}
+
+.layer{
+    width: 100%;
+    height: 0;
+    background: linear-gradient(pink,white);
+    border-radius: 10px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    overflow: hidden;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0 40px;
+    text-align: center;
+    font-size: 14px;
+    transition: height 0.5s;
+}
+.layer h3{
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+.layer a{
+    margin-top: 20px;
+    columns: brown;
+    text-decoration: none;
+    font-size: 18px;
+    line-height: 60px;
+    background:brown;
+    width: 40px;
+    height: 60px;
+    border-radius: 50%;
+    text-align: center;
+}
+.work:hover img{
+    transform: scale(1.1);
+}
+.work:hover .layer{
+    height: 100%;
+}
+
+.contact-left{
+    flex-basis: 35%;
+}
+.contact-right{
+   flex-basis: 60%;
+}
+.contact-left p{
+   margin-top: 30px;
+   color: brown;
+}
+.contact-left p i{
+   color: brown;
+   margin-right: 15px;
+   font-size: 25px;
+}
+.social-icons{
+   margin-top: 30px;
+}
+.social-icons a{
+   text-decoration: none;
+   font-size: 30px;
+   margin-right: 15px;
+   color: #ababab;
+   display: inline-block;
+   transition: transform 0.5s;
+}
+.social-icons a:hover{
+   color: brown;
+   transform: translateY(-5px);
+}
+.btn.btn2{
+   display: inline-block;
+   background: brown;
+}
+.btn{
+    text-decoration: none;
+    border-radius: 6px;
+    height:30px;
+    width: 60px;
+    color: brown;
+}
+.contact-right form{
+   width: 100%;
+}
+form input, form textarea{
+   width: 100%;
+   border: 0;
+   outline: none;
+   background: #262626;
+   padding: 15px;
+   margin: 15px 0;
+   color: white;
+   font-size: 18px;
+   border-radius: 6px;
+}
+form .btn2{
+   padding: 14px 16px;
+   font-size: 18px;
+   margin-top: 20px;
+   cursor: pointer;
+}
+
+nav .fas{
+   display: none;
+}
+
+
+@media only screen and (max-width:600px){
+
+   .header-text{
+       margin-top: 100%;
+       font-size: 16px;
+
+   }
+   .header-text h1{
+
+       font-size: 30px;
+   }
+   nav .fas{
+       display: block;
+       font-size: 25px;
+   }
+   nav ul{
+       background: BROWN;
+       position: fixed;
+       top: 0;
+       right: -200px;
+       width: 200px;
+       height: 100px;
+       padding-top: 50px;
+       z-index: 2;
+       transition: right 0.5s;
+   }
+   nav ul li{
+       display: block;
+       margin: 25px;
+   }
+   nav ul .fas{
+       position: absolute;
+       top: 25px;
+       left: 25px;
+       cursor: pointer;
+   }
+   .sub-title{
+       font-size: 40px;
+   }
+   .about-col-1,.about-col-2{
+       flex-basis: 100%;
+   }
+   .about-col-2{
+       margin-bottom: 30px;
+   }
+   .tab-links{
+       font-size: 16px;
+       margin-right: 20px;
+   }
+   .copyright{
+       font-size: 14px;
+   }
+
+}
+#msg{
+  color: brown;
+  margin-top: 40px;
+  display: block;
+}
+
+

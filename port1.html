@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    
+    <script src="https://kit.fontawesome.com/e7eb419a9f.js" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/c4254e24a8.js" crossoringin="anonymous"></script>
+</head>
+<body>
+    
+   <div id="header">
+    <div class="container">
+        <nav>
+            <ul>
+                <li><a href="#header">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#work1">Projects</a></li>
+                <li> <a href="#contact">Contact</a></li>
+                <li><i class="fas fa-times" onclick="closemenu()"></i></li>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+
+        </nav>
+        <div class="image"><img src="rakshitha.png"></div>
+        <div class="heading">
+            <h1>Web Designer <br>Hi, I'm <span>RAKSHITHA </span></h1>
+        </div>  
+    </div>
+   </div>
+
+</div id="about">
+<div class="container">
+    <div class="row">
+        <div class="abtme1">
+            <img src="rakshpro.jpg">
+        </div>
+        <div class="abtme2">
+            <h1 class="sub-title">About <span style="color:brown;">Me</span> </h1>
+            <p>Welcome to my digital space! I'm a passionate web
+            developer dedicated to creating seamless online experiences.
+             With a commitment to clean code and intuitive design, 
+             I thrive on challenges that push my skills to new heights.
+              My portfolio reflects my dedication to excellence, 
+              and I invite you to explore the projects that showcase
+               my collaborative mindset. Whether you're a potential employer, 
+               client, or fellow enthusiast, let's connect and explore 
+               the possibilities of building something incredible together. </p>
+            <div class="t_title">
+            <p class="t_links active-link" onclick="opentab('skills')">Skills</p>
+            <p class="t_links" onclick="opentab('experience')">Programming Languages</p>
+            <p class = "t_links" onclick="opentab('education')">Education</p>
+        </div>
+    
+            <div class="t_contents active-tab" id ="skills">
+            <ul>
+                <li><span>Web developer</span><br>Experienced in building static websites and 
+                    replicas using HTML, CSS, and JS to deliver straightforward and visually 
+                    cohesive designs.</li>
+                <li><span>Database-Integrated Web Design</span><br>Skilled in developing websites
+                     with database integration for efficient data management, allowing seamless 
+                     insertion, deletion, and updating of information </li>
+            </ul>
+        </div>
+        <div class="t_contents" id="experience">
+            <ul>
+                <li>C & Data structures in C</li>
+                <li>Java (OOPs concepts and GUI)</li>
+                <li>HTML,CSS and JS(basics)</li>
+                <li>PHP</li>
+                <li>Python (Basics)</li>
+                <li>MySQL</li>
+            </ul>
+        </div>
+        <div class="t_contents" id ="education">
+            <ul>
+                <li><span>2021-2023</span><br>B.E. in Computer Science <br>
+                    SDM College of Engineering and Technology</li>
+                <li><span>2020-2021</span><br>Intermediate <br>
+                    Vignaan Independent PU College</li>
+                <li><span>2018-2019</span><br>Matriculation <br>
+                    Shantiniketan Public School
+                   </li>
+            </ul>
+        </div>
+        </div>
+
+<div id="work1">
+    <div class="container">
+        <h1 class="sub-title">My <span style="color: brown;">Works</span></h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="spotify.png" >
+                <div class="layer">
+                    <h3><span style="color: brown;">Spotify</span></h3>
+                    <p>Spotify is a leading music streaming platform that allows users
+                         to access a vast catalog of songs, playlists, and podcasts, 
+                         offering personalized recommendations and a seamless listening 
+                         experience across various devices.</p>
+                   <a href="http://127.0.0.1:5500/oasis_infobyte/spotify/music.html"><i class="fa-brands fa-spotify"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="calsi.png" >
+                <div class="layer">
+                    <h3><span style="color: brown;">Simple Calculator</span></h3>
+                    <p>A calculator is a device or software tool used for performing arithmetic and mathematical operations, facilitating numerical calculations and problem-solving in various fields.</p>
+                   <a href="http://127.0.0.1:5500/oasis_infobyte/calsi.html"><i class="fa-solid fa-calculator"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="land.png">
+                <div class="layer"><span style="color: brown;">Landing page</span></h3>
+                    <p>A landing page is a standalone web page designed for a specific purpose, often associated with marketing or advertising campaigns. It is crafted to prompt a targeted action from visitors, such as making a purchase, signing up for a service, or providing contact information.</p>
+                   <a href="http://127.0.0.1:5500/landing_page.html"><i class="fa-solid fa-plane"></i></a>
+                </div>
+            </div>
+</div>
+
+<div id="work2">
+    <div class="container">
+        <h1 class="sub-title">MY <span style="color: brown;">Projects</span> </h1>
+        <div class="work2-list">
+            <div>
+               
+                <h2>Invigilation Duty Remainder</h2>
+                <p>Java-based Invigilation Duty Reminder System.Utilizing
+                     Maven for project management and 
+                    AWT/Swing for the user interface, it efficiently
+                     automates the reminder process. Integrated with 
+                     Twilio API, the system sends SMS notifications,
+                      ensuring invigilators receive timely reminders 
+                      of their duty schedules. This streamlined solution 
+                      enhances communication, minimizing oversights and 
+                      optimizing invigilation duty management in educational settings.</p>
+               
+            </div>
+            <div>
+               
+                <h2>Portfolio website</h2>
+                <p>This website is a dynamic and visually appealing personal 
+                    portfolio website designed to showcase your skills and projects.
+                     Built using HTML, CSS, and JavaScript, it offers a seamless 
+                     user experience across devices. With sections like About Me, 
+                     Skills, and Projects, "Portfolio" presents a comprehensive 
+                     overview of your expertise, making it an ideal platform to 
+                     impress potential employers and clients.</p>
+                
+            </div>
+            <div>
+               
+                <h2>Plant Disease Detection</h2>
+                <p>This app employs Convolutional Neural Networks 
+                    (CNN) and image processing to swiftly and accurately 
+                    detect plant diseases. Trained on a diverse dataset, 
+                    this tool aids farmers in proactive crop protection, 
+                    minimizing losses and promoting sustainable agriculture. 
+                    Future enhancements may include real-time monitoring and 
+                    continuous learning capabilities.</p>
+            </div>
+        </div>
+    </div>
+</div>
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact <span style="color: brown;">Me</span></h1>
+                <p><i class=" fas fa-paper-plane "></i> rakshithalv09@gmail.com</p>
+                <p><i class="fa-solid fa-phone"></i>1234567890</p>
+                <div class="social-icons">
+                <a href="https://facebook.com/"><i class="fab fa-facebook"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="https://www.linkedin.com/in/l-v-rakshitha-130621273?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"><i class="fab fa-linkedin"></i></a>
+               
+            </div>
+
+            <a href="Extended_SRS_finalized(ATM)[1].docx" download class="btn" class="btn2">Download cv</a>
+            </div>
+                <div class="contact-left">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your name" required>
+                    <input type="email" name="Email" id="Email" placeholder="your email" required>
+                    <textarea name="Message"  rows="6" placeholder="your Message" ></textarea>
+                    <button type="submit" class="btn" class="btn2"> Submit</button>
+                </form>
+            <span id="msg" ></span>
+        </div>
+    </div>
+</div>
+
+
+    <script>
+        var tablinks = document.getElementsByClassName("t_links");
+        var tabcontents = document.getElementsByClassName("t_contents");
+        function opentab(tabname){
+            for(tablink of tablinks){
+                tablink.classList.remove("active-link");
+            }
+            for(tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab")
+        }
+    </script>
+    <script>
+        var sidemen=document.getElementById("sidemenu");
+
+        function openmenu(){
+            sidemen.style.right="0";
+        }
+        function closemenu(){
+            sidemen.style.right="-200px";
+        }
+    </script>
+   
+   <form name="submit-to-google-sheet">
+  </form>
+  
+  <script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbw-u6W6FhXHVc4pzvAbH53qj-ARUP7-3LQTcHs_P6tbjc7qjjQjghbXHMGEB0LUURqD/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById("msg")
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response =>  {
+            msg.innerHTML="message sent successfully"
+            setTimeout(function(){
+                msg.innerHTML=""
+            },15000)   
+        form.reset()     })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+
+</body>
+</html>
